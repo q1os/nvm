@@ -67,9 +67,11 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Intro
+## Intro 介绍
 
 `nvm` allows you to quickly install and use different versions of node via the command line.
+
+nvm允许你通过命令行快速安装和使用不同的node版本
 
 **Example:**
 ```sh
@@ -90,14 +92,16 @@ v12.22.6
 Simple as that!
 
 
-## About
+## About 关于
 nvm is a version manager for [node.js](https://nodejs.org/en/), designed to be installed per-user, and invoked per-shell. `nvm` works on any POSIX-compliant shell (sh, dash, ksh, zsh, bash), in particular on these platforms: unix, macOS, and [windows WSL](https://github.com/nvm-sh/nvm#important-notes).
+
+nvm是一个node.js的版本管理器，被设计为先于用户安装，先于shell调用。nvm能工作在符合POSIX标准的shell 。(sh, dash, ksh, zsh, bash) ， 尤其是这些平台：unix，macOS 和 Windows WSL
 
 <a id="installation-and-update"></a>
 <a id="install-script"></a>
-## Installing and Updating
+## Installing and Updating  安装和更新
 
-### Install & Update Script
+### Install & Update Script  安装和更新脚本
 
 To **install** or **update** nvm, you should run the [install script][2]. To do that, you may either download and run the script manually, or use the following cURL or Wget command:
 ```sh
