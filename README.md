@@ -134,15 +134,20 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 - You can customize the install source, directory, profile, and version using the `NVM_SOURCE`, `NVM_DIR`, `PROFILE`, and `NODE_VERSION` variables.
 Eg: `curl ... | NVM_DIR="path/to/nvm"`. Ensure that the `NVM_DIR` does not contain a trailing slash.
+- 您可以使用 NVM_SOURCE、NVM_DIR、PROFILE 和 NODE_VERSION 变量自定义安装源、目录、配置文件和版本。 例如：cURL... | NVM_DIR =“路径/到/nvm”。 确保 NVM_DIR 不包含尾部斜杠。
 
 - The installer can use `git`, `curl`, or `wget` to download `nvm`, whichever is available.
+- 安装程序可以使用“git”、“curl”或“wget”来下载“nvm”（以可用者为准）。
 
 - You can instruct the installer to not edit your shell config (for example if you already get completions via a [zsh nvm plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/nvm)) by setting `PROFILE=/dev/null` before running the `install.sh` script. Here's an example one-line command to do that: `PROFILE=/dev/null bash -c 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash'`
+- 您可以指示安装程序不要编辑您的 shell 配置（例如，如果您已经通过在运行 `install.sh` 脚本之前设置 `PROFILE=/dev/null` 来通过 zsh nvm 插件获得完成。这是一个示例单行 命令：`PROFILE=/dev/null bash -c 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash'`
 
-#### Troubleshooting on Linux
+#### Troubleshooting on Linux 故障排除
 
 On Linux, after running the install script, if you get `nvm: command not found` or see no feedback from your terminal after you type `command -v nvm`, simply close your current terminal, open a new terminal, and try verifying again.
+在 Linux 上，运行安装脚本后，如果您收到“nvm：找不到命令”或在键入“command -v nvm”后看到终端没有任何反馈，只需关闭当前终端，打开一个新终端，然后尝试验证 再次。
 Alternatively, you can run the following commands for the different shells on the command line:
+或者，您可以在命令行上针对不同的 shell 运行以下命令：
 
 *bash*: `source ~/.bashrc`
 
@@ -151,6 +156,7 @@ Alternatively, you can run the following commands for the different shells on th
 *ksh*: `. ~/.profile`
 
 These should pick up the `nvm` command.
+这些应该会选择“nvm”命令。
 
 #### Troubleshooting on macOS
 
