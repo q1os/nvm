@@ -104,6 +104,9 @@ nvm是一个node.js的版本管理器，被设计为先于用户安装，先于s
 ### Install & Update Script  安装和更新脚本
 
 To **install** or **update** nvm, you should run the [install script][2]. To do that, you may either download and run the script manually, or use the following cURL or Wget command:
+
+要安装或更新nvm，你应该运行安装脚本。 要做到这一点，你可能要手动下载和运行脚本，或者使用下面cURL或者Wget命令：
+
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 ```
@@ -113,15 +116,19 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 
 Running either of the above commands downloads a script and runs it. The script clones the nvm repository to `~/.nvm`, and attempts to add the source lines from the snippet below to the correct profile file (`~/.bash_profile`, `~/.zshrc`, `~/.profile`, or `~/.bashrc`).
 
+运行上述任一命令，下载一个脚本并运行它。 这个脚本会克隆 nvm仓库到 ~/.nvm目录并试图添加源代码行到下面的代码片段到正确的配置文件中。(`~/.bash_profile`, `~/.zshrc`, `~/.profile`, or `~/.bashrc`)
+
 <a id="profile_snippet"></a>
 ```sh
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 ```
 
-#### Additional Notes
+#### Additional Notes  额外注意
 
 - If the environment variable `$XDG_CONFIG_HOME` is present, it will place the `nvm` files there.</sub>
+
+如果环境变量 $XDG_CONFIG_HOME 存在，他将会替代 nvm文件。
 
 - You can add `--no-use` to the end of the above script (...`nvm.sh --no-use`) to postpone using `nvm` until you manually [`use`](#usage) it.
 
