@@ -127,10 +127,10 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 #### Additional Notes  额外注意
 
 - If the environment variable `$XDG_CONFIG_HOME` is present, it will place the `nvm` files there.</sub>
-
-如果环境变量 $XDG_CONFIG_HOME 存在，他将会把nvm文件放到该目录下。
+- 如果环境变量 $XDG_CONFIG_HOME 存在，他将会把nvm文件放到该目录下。
 
 - You can add `--no-use` to the end of the above script (...`nvm.sh --no-use`) to postpone using `nvm` until you manually [`use`](#usage) it.
+- 您可以将 --no-use 添加到上述脚本的末尾 (...nvm.sh --no-use) 以推迟使用 nvm，直到您手动使用它。
 
 - You can customize the install source, directory, profile, and version using the `NVM_SOURCE`, `NVM_DIR`, `PROFILE`, and `NODE_VERSION` variables.
 Eg: `curl ... | NVM_DIR="path/to/nvm"`. Ensure that the `NVM_DIR` does not contain a trailing slash.
