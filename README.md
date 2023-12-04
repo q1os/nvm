@@ -128,7 +128,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 - If the environment variable `$XDG_CONFIG_HOME` is present, it will place the `nvm` files there.</sub>
 
-如果环境变量 $XDG_CONFIG_HOME 存在，他将会替代 nvm文件。
+如果环境变量 $XDG_CONFIG_HOME 存在，他将会把nvm文件放到该目录下。
 
 - You can add `--no-use` to the end of the above script (...`nvm.sh --no-use`) to postpone using `nvm` until you manually [`use`](#usage) it.
 
