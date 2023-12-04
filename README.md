@@ -140,13 +140,18 @@ Eg: `curl ... | NVM_DIR="path/to/nvm"`. Ensure that the `NVM_DIR` does not conta
 - 安装程序可以使用“git”、“curl”或“wget”来下载“nvm”（以可用者为准）。
 
 - You can instruct the installer to not edit your shell config (for example if you already get completions via a [zsh nvm plugin](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/nvm)) by setting `PROFILE=/dev/null` before running the `install.sh` script. Here's an example one-line command to do that: `PROFILE=/dev/null bash -c 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash'`
-- 您可以指示安装程序不要编辑您的 shell 配置（例如，如果您已经通过在运行 `install.sh` 脚本之前设置 `PROFILE=/dev/null` 来通过 zsh nvm 插件获得完成。这是一个示例单行 命令：`PROFILE=/dev/null bash -c 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash'`
+  
+- 您可以指示安装程序不要编辑您的 shell 配置（例如，如果您已经通过在运行 `install.sh` 脚本之前设置 `PROFILE=/dev/null` 来通过 zsh nvm 插件获得完成。这是一个示例单行 命令：
+  `PROFILE=/dev/null bash -c 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash'`
 
 #### Troubleshooting on Linux 故障排除
 
 On Linux, after running the install script, if you get `nvm: command not found` or see no feedback from your terminal after you type `command -v nvm`, simply close your current terminal, open a new terminal, and try verifying again.
+
 在 Linux 上，运行安装脚本后，如果您收到“nvm：找不到命令”或在键入“command -v nvm”后看到终端没有任何反馈，只需关闭当前终端，打开一个新终端，然后尝试验证 再次。
+
 Alternatively, you can run the following commands for the different shells on the command line:
+
 或者，您可以在命令行上针对不同的 shell 运行以下命令：
 
 *bash*: `source ~/.bashrc`
@@ -156,9 +161,10 @@ Alternatively, you can run the following commands for the different shells on th
 *ksh*: `. ~/.profile`
 
 These should pick up the `nvm` command.
+
 这些应该会选择“nvm”命令。
 
-#### Troubleshooting on macOS
+#### Troubleshooting on macOS 
 
 Since OS X 10.9, `/usr/bin/git` has been preset by Xcode command line tools, which means we can't properly detect if Git is installed or not. You need to manually install the Xcode command line tools before running the install script, otherwise, it'll fail. (see [#1782](https://github.com/nvm-sh/nvm/issues/1782))
 
